@@ -5,6 +5,7 @@ import Main from "./Main/Main";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Project from "./Project/Project";
+import { Analytics } from "@vercel/analytics/next"
 
 
 const geistSans = Geist({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         {children}
         <Project/>
         <Contact/>
+        <Analytics/>
       </body>
     </html>
   );

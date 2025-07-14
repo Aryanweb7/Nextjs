@@ -34,7 +34,7 @@ const Main = () => {
         <a href="#Contact">
           <button className="hire_me">Hire Me</button>
         </a>
-        <a href="https://pdf.ac/MrpiA" download>
+        <a href="/My cv resume.pdf" download>
           <button className="download_cv">Download CV</button>
         </a>
       </div>

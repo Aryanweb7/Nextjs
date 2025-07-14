@@ -15,6 +15,7 @@ const Project = () => {
         <button onClick={() => setView('all')}>All</button>
         <button onClick={() => setView('react_nextjs')}>React & Next.js</button>
         <button onClick={() => setView('html_css_bootstrap')}>HTML, CSS & Bootstrap</button>
+        <button onClick={() => setView('main_project')}>Main Projects</button>
       </div>
 
       {/* ALL Projects */}
@@ -96,6 +97,25 @@ const Project = () => {
               <p>A homepage clone of the Puma website designed with HTML and CSS.</p>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Main Projects */}
+      {(view === 'all' || view === 'main_project') && (
+        <div className="projects-grid" id="main_project">
+          {/* CARD 1 */}
+          <div className="card">
+            <a href="https://food-picker-six.vercel.app/">
+              <img src="/Food_picker.jpg" alt="food picker" />
+            </a>
+            <div className="card-header"><h2>Food Picker Website</h2></div>
+            <div className="card-body">
+              <p>Food Picker helps you quickly decide what to eat with random
+                 meal suggestions and easy recipes. Simple, fast, and tasty!</p>
+            </div>
+          </div>
+          
+          
         </div>
       )}
     </div>
